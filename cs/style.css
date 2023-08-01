@@ -1,0 +1,21 @@
+body {
+    background-color: gainsboro;
+    
+} 
+
+h1 {
+    display: inline;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 50px;
+}
+
+.slider {
+    display: block;
+    visibility: hidden;
+}
+
+p {
+    display: inline;
+    font-style: italic;
+}
