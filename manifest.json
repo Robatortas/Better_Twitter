@@ -4,16 +4,22 @@
     "description": "Revert back to your favorite bird app.",
     "version": "1.0",
     "action": {
+      "default_title": "Better Twitter",
       "default_popup": "bt.html",
       "default_icon": "res/bt.png"
     },
     "content_scripts": [
       {
+        "css": ["css/bt.css", "css/style.css"],
         "js": ["contents/bt.js"],
         "matches": [
           "https://twitter.com/*",
           "https://x.com/*"
         ]
       }
-    ]
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "tabs"]
   }
